@@ -1,7 +1,7 @@
-node-bandcamp
-=============
+node-bandcamp [![npm version](https://badge.fury.io/js/node-bandcamp.svg)](http://badge.fury.io/js/node-bandcamp)
+=================================================================================================================
 
-node.js Bandcamp API. This package can be found on NPM [here](https://www.npmjs.org/package/node-bandcamp).
+node.js (unofficial) Bandcamp API.
 
 ---
 
@@ -12,7 +12,7 @@ node.js Bandcamp API. This package can be found on NPM [here](https://www.npmjs.
 
 ---
 
-#### Searching for tracks
+### Searching for tracks
 
 Specific tracks can be searched for using the `trackSearch` method. This function takes the following parameters:
 
@@ -21,7 +21,7 @@ Specific tracks can be searched for using the `trackSearch` method. This functio
 
 The function will recursively query Bandcamp until results are exhausted or the limit is hit.
 
-```
+```javascript
 var bandcamp = require('node-bandcamp');
 
 bandcamp.trackSearch('tibetan pop stars', 30).then(function(results){
@@ -29,17 +29,18 @@ bandcamp.trackSearch('tibetan pop stars', 30).then(function(results){
 }).catch(function(err) {
   // handle error
 });
+```
 
 Returns a `promise`, which will eventually resolve as an array of search results. Results are in the format:
 
-```
+```json
 [
   {
-    title: 'title',
-    album: 'album name',
-    artist: 'artist name',
-    image: 'URL to track artwork',
-    url: 'URL to be passed to trackSearch method'
+    "title": "title",
+    "album": "album name",
+    "artist": "artist name",
+    "image": "URL to track artwork",
+    "url": "URL to be passed to trackSearch method"
   }
   ...
 ]
@@ -48,11 +49,11 @@ Returns a `promise`, which will eventually resolve as an array of search results
 
 ---
 
-#### Streaming a track
+### Streaming a track
 
 A specific track can be streamed using the `getTrack` method. This function takes just one parameter, the Bandcamp URL string retrieved using the previously discussed `trackSearch` method.
 
-```
+```javascript
 var bandcamp = require('node-bandcamp');
 
 bandcamp.getTrack('http://hopalong.bandcamp.com/track/tibetan-pop-stars').then(function(stream) {

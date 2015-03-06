@@ -2,11 +2,12 @@
   "name": "node-bandcamp",
   "version": "0.0.1",
   "author": "Jake Marsh <jakemmarsh@gmail.com>",
-  "description": "A node.js API for Bandcamp.",
+  "description": "An (unofficial) node.js API for Bandcamp.",
   "repository": {
     "type": "git",
     "url": "https://github.com/jakemmarsh/node-bandcamp.git"
   },
+  "private": false,
   "license": "MIT",
   "keywords": [
     "node",
