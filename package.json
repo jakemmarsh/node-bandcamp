@@ -1,6 +1,6 @@
 {
   "name": "node-bandcamp",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Jake Marsh <jakemmarsh@gmail.com>",
   "description": "An (unofficial) node.js API for Bandcamp.",
   "repository": {
@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "cheerio": "^0.18.0",
+    "request": "^2.53.0",
     "when": "^3.7.2"
   }
 }
