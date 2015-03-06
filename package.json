@@ -1,0 +1,23 @@
+{
+  "name": "node-bandcamp",
+  "version": "0.0.1",
+  "author": "Jake Marsh <jakemmarsh@gmail.com>",
+  "description": "A node.js API for Bandcamp.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jakemmarsh/node-bandcamp.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "music",
+    "bandcamp"
+  ],
+  "engines": {
+    "node": ">=0.12.x"
+  },
+  "dependencies": {
+    "cheerio": "^0.18.0",
+    "when": "^3.7.2"
+  }
+}
