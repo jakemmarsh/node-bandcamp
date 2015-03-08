@@ -1,6 +1,6 @@
 {
   "name": "node-bandcamp",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Jake Marsh <jakemmarsh@gmail.com>",
   "description": "An (unofficial) node.js API for Bandcamp.",
   "repository": {
