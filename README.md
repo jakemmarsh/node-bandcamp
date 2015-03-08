@@ -71,7 +71,7 @@ Returns a `promise`, which will eventually resolve as an audio stream.
 
 All tests for this package are within the `__tests__/` directory. If you wish to run the tests:
 
-1. `git clone`
+1. `git clone git@github.com:jakemmarsh/node-bandcamp.git`
 2. `cd node-bandcamp`
 3. `npm install`
 4. `npm test`
