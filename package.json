@@ -21,5 +21,23 @@
     "cheerio": "^0.18.0",
     "request": "^2.53.0",
     "when": "^3.7.2"
+  },
+  "devDependencies": {
+    "isstream": "^0.1.2",
+    "jest-cli": "^0.4.0"
+  },
+  "jest": {
+    "rootDir": ".",
+    "testPathDirs": [
+      "<rootDir>"
+    ],
+    "testDirectoryName": "__tests__",
+    "testFileExtensions": [
+      "js"
+    ],
+    "unmockedModulePathPatterns": ["<rootDir>/node_modules/when"]
+  },
+  "scripts": {
+    "test": "jest"
   }
 }
