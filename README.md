@@ -40,7 +40,7 @@ Returns a `promise`, which will eventually resolve as an array of search results
     "album": "album name",
     "artist": "artist name",
     "image": "URL to track artwork",
-    "url": "URL to be passed to trackSearch method"
+    "url": "URL to be passed to getTrack method"
   },
   ...
 ]
