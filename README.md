@@ -71,6 +71,17 @@ Returns a `promise`, which will eventually resolve as an audio stream.
 
 The details for a specific track (title, duration, etc.) can be retrieved using the `getDetails` method. This function takes the Bandcamp URL string for the track as a parameter, and returns a `promise` which will eventually resolve as an object in the same format as search results:
 
+```javascript
+var bandcamp = require('node-bandcamp');
+
+bandcamp.getDetails('http://hopalong.bandcamp.com/track/tibetan-pop-stars').then(function(details) {
+  // return details to res, etc.
+}).catch(function(err) {
+  // handle error
+});
+```
+
+and the promise resolves with an object in the format:
 ```json
 {
   "title": "title",
