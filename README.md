@@ -67,6 +67,22 @@ Returns a `promise`, which will eventually resolve as an audio stream.
 
 ---
 
+### Getting track details
+
+The details for a specific track (title, duration, etc.) can be retrieved using the `getDetails` method. This function takes the Bandcamp URL string for the track as a parameter, and returns a `promise` which will eventually resolve as an object in the same format as search results:
+
+```json
+{
+  "title": "title",
+  "album": "album name",
+  "artist": "artist name",
+  "image": "URL to track artwork",
+  "url": "URL to be passed to getTrack method"
+}
+```
+
+---
+
 ### Testing
 
 All tests for this package are within the `__tests__/` directory. If you wish to run the tests:
